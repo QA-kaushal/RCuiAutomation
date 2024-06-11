@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="RoyalCaninTestClass.Listeners"></listener>
+    </listeners>   
+    <!-- First Test Run -->
+    <test thread-count="5" name="TestRun1">	
+		<parameter name="PetParent_Number" value="8275877871"></parameter>	
+		   <parameter name="HamperCode" value="RCRCRCRC12"></parameter>
+        <classes>
+            <class name="RoyalCaninTestClass.RCloginTest"/>
+            <class name="RoyalCaninTestClass.RecruitNewPetParentTest"/>
+        </classes>
+    </test> <!-- TestRun1 -->
+    <!-- Second Test Run with Different Parameter --> 
+</suite> <!-- Suite -->
+
+

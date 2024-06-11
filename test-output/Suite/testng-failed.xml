@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="RoyalCaninTestClass.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="TestRun1(failed)">
+    <parameter name="PetParent_Number" value="8275877871"/>
+    <parameter name="HamperCode" value="RCRCRCRC12"/>
+    <classes>
+      <class name="RoyalCaninTestClass.RCloginTest">
+        <methods>
+          <include name="enterOTP" invocation-numbers="5"/>
+          <include name="start"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- RoyalCaninTestClass.RCloginTest -->
+      <class name="RoyalCaninTestClass.RecruitNewPetParentTest">
+        <methods>
+          <include name="Side_Menu"/>
+          <include name="Log_Out"/>
+          <include name="HamperCode" invocation-numbers="0"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="LoginPage"/>
+          <include name="VerifyOTP"/>
+        </methods>
+      </class> <!-- RoyalCaninTestClass.RecruitNewPetParentTest -->
+    </classes>
+  </test> <!-- TestRun1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
